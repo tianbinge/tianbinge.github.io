@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="googlebot" content="noindex, nofollow"/>
+    <title> tianbinge的个人主页</title>
+
+
+    <script type="text/javascript" src="" ></script>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+<script type="application/javascript" src="main.js"></script>
+
+</head>
+<body>
+<canvas id=c></canvas>
+<!--
+ALGORITHM:
+
+structure:
+- gen( x,y,z ):
+	- create node at x,y,z // blue
+	- append some children to list:
+		- within a certain distance to parent
+		- outside a certain distance from any node
+		- within a global distance
+	- if no children
+		- don't append any
+		- set as end node // green-ish
+
+- gen( 0,0,0 ) // red
+- while list has items
+	- gen( position of first item )
+	- remove first item
+
+
+impulse behaviour:
+- pick( node ):
+	- if node is end node
+		- pick( original node )
+	- else
+		- pick( random node from node children )
+
+- pick( original node)
+
+-->
+</body>
+</html>
+
